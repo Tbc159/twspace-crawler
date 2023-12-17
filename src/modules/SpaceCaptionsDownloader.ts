@@ -19,7 +19,7 @@ export class SpaceCaptionsDownloader {
     private file?: string,
   ) {
     this.logger = baseLogger.child({ label: `[SpaceCaptionsDownloader@${spaceId}]` })
-    this.file = this.file || `${new Date().toISOString().replace(/[^\d]/g, '').substring(2, 14)} (${spaceId}) CC.jsonl`
+    this.file = this.file || `${new Date().toISOString().replace(/[^\d]/g, '').substring(2, 14)} (${spaceId}) CC.json`
   }
 
   public async download() {

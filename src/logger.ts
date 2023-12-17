@@ -62,7 +62,7 @@ const logger = winston.createLogger({
 
 const spaceLogger = winston.createLogger({
   format: format.printf((info) => (typeof info.message === 'string' ? info.message : JSON.stringify(info.message))),
-  transports: [new winston.transports.File({ dirname: LOGGER_DIR, filename: 'spaces.jsonl' })],
+  transports: [new winston.transports.File({ dirname: LOGGER_DIR, filename: 'spaces.json' })],
 })
 
 function toggleDebugConsole() {

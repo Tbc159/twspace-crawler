@@ -126,11 +126,11 @@ twspace-crawler cc d 1yoJMWneoZwKQ https://prod-chatman-ancillary-ap-northeast-1
 ```
 
 ```
-twspace-crawler cc e /download/sample_cc.jsonl
+twspace-crawler cc e /download/sample_cc.json
 ```
 
 ```
-twspace-crawler cc e /download/sample_cc.jsonl 1633612289669
+twspace-crawler cc e /download/sample_cc.json 1633612289669
 ```
 
 ## Webhooks

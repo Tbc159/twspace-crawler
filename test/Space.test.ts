@@ -14,7 +14,7 @@ export { lab }
 //   .filter((space) => space.playlist_url)
 
 const spaces = Array
-  .from<any>(readFileSync(path.join(__dirname, '../logs/spaces.jsonl'), { encoding: 'utf8' }).trim().split('\n'))
+  .from<any>(readFileSync(path.join(__dirname, '../logs/spaces.json'), { encoding: 'utf8' }).trim().split('\n'))
   .filter((v) => v)
   .map((v) => JSON.parse(v))
 

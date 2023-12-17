@@ -353,7 +353,7 @@ export class SpaceWatcher extends EventEmitter {
     }
     try {
       const username = this.space?.creator?.username
-      const tmpFile = path.join(Util.getMediaDir(username), `${this.filename} CC.jsonl`)
+      const tmpFile = path.join(Util.getMediaDir(username), `${this.filename} CC.json`)
       const outFile = path.join(Util.getMediaDir(username), `${this.filename} CC.txt`)
       Util.createMediaDir(username)
       await new SpaceCaptionsDownloader(
